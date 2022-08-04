@@ -63,7 +63,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     homepage = "https://www.freedesktop.org/wiki/Software/xdg-utils/";
     description = "A set of command line tools that assist applications with a variety of desktop integration tasks";
-    license = if mimiSupport then licenses.gpl2 else licenses.free;
+    license = licenses.mit;
     maintainers = [ maintainers.eelco ];
     platforms = platforms.all;
   };
